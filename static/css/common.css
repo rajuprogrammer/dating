@@ -1,0 +1,237 @@
+/**
+ * Font faces
+ */
+ @font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAPROBLA.OTF') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAPROBOL.OTF') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAPROMED.OTF') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAPROREG.OTF') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/GOTHAPROLIG.OTF') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Uni';
+    src: url('../fonts/UniNeueHeavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Uni';
+    src: url('../fonts/UniNeueBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Uni';
+    src: url('../fonts/UniNeueRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Uni';
+    src: url('../fonts/UniNeueRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/**
+ * Bootstrap overrides
+ */
+.form-control {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .05);
+    border-color: rgba(255, 255, 255, .1);
+}
+.form-control:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);;
+    border-color: #eb4354;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(235, 67, 84, 0.25);
+}
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+.form-control::-webkit-input-placeholder, .form-control::-moz-placeholder, .form-control:-ms-input-placeholder, .form-control::-ms-input-placeholder, .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    outline: none;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background: #eb4354;
+}
+
+/**
+ * Bootstrap extension
+ */
+.btn-crimson {
+    color: #fff;
+    background-color: #eb4354;
+    border-color: #eb4354;
+}
+.btn-crimson:hover {
+    color: #fff;
+    background-color: #ea394a;
+    border-color: #ea394a;
+}
+.btn-crimson:focus, .btn-crimson.focus {
+    color: #fff;
+    background-color: #ea394a;
+    border-color: #ea394a;
+    box-shadow: 0 0 0 0.2rem rgba(232, 77, 93, 0.5);
+}
+.btn-crimson.disabled, .btn-crimson:disabled {
+    color: #fff;
+    background-color: #eb4354;
+    border-color: #eb4354;
+}
+.btn-crimson:not(:disabled):not(.disabled):active, .btn-crimson:not(:disabled):not(.disabled).active, .show > .btn-crimson.dropdown-toggle {
+    color: #fff;
+    background-color: #ea394a;
+    border-color: #ea394a;
+}
+.btn-crimson:not(:disabled):not(.disabled):active:focus, .btn-crimson:not(:disabled):not(.disabled).active:focus, .show > .btn-crimson.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(232, 77, 93, 0.5);
+}
+
+.btn-crimson-outline {
+    color: #eb4354;
+    background-color: transparent;
+    border-color: #eb4354;
+    transition: color .4s ease-in-out, background-color .4s ease-in-out;
+}
+.btn-crimson-outline:hover {
+    color: #fff;
+    background-color: #ea394a;
+    border-color: #ea394a;
+}
+.btn-crimson-outline:focus, .btn-crimson-outline.focus {
+    color: #fff;
+    background-color: #ea394a;
+    border-color: #ea394a;
+    box-shadow: 0 0 0 0.2rem rgba(232, 77, 93, 0.5);
+}
+.btn-crimson-outline.disabled, .btn-crimson-outline:disabled {
+    color: #eb4354;
+    background-color: rgba(255, 255, 255, .05);
+    border-color: #eb4354;
+}
+.btn-crimson-outline:not(:disabled):not(.disabled):active, .btn-crimson-outline:not(:disabled):not(.disabled).active, .show > .btn-crimson-outline.dropdown-toggle {
+    color: #fff;
+    background-color: #ea394a;
+    border-color: #ea394a;
+}
+.btn-crimson-outline:not(:disabled):not(.disabled):active:focus, .btn-crimson-outline:not(:disabled):not(.disabled).active:focus, .show > .btn-crimson-outline.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(232, 77, 93, 0.5);
+}
+  
+.btn-xl {
+    padding: 0.75rem 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+}
+
+/**
+ * .form-panel 
+ */
+.form-panel-title {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.form-panel-description {
+    margin-bottom: 30px;
+}
+.form-panel-social-buttons {
+    position: relative;
+    margin-top: 90px;
+}
+.form-panel-social-buttons:before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .1);
+}
+.form-panel-social-buttons-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-panel-social-buttons-hrefs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    margin: 0 auto;
+}
+.form-panel-social-buttons-hrefs a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out;
+}
+.form-panel-social-buttons-hrefs a:hover {
+    background-color: #eb4354;
+}
+@media screen and (min-width: 510px) {
+    .form-panel {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 45px 30px;
+        background: rgba(255,255,255, .05);
+    }
+    .form-panel-title {
+        text-align: center;
+    }
+    .form-panel-description {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .form-panel-title {
+        font-size: 36px;
+    }
+}
+.form-panel .alert ul {
+    padding-left: 20px;
+}
